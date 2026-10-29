@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Elige el estatus"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginBottom="16dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/rbPendiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pendiente"
+            android:checked="true"
+            android:textSize="12sp"/>
+
+        <RadioButton
+            android:id="@+id/rbAplazado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aplazado"
+            android:textSize="12sp"
+            android:layout_marginStart="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rbRealizado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Realizado"
+            android:textSize="12sp"
+            android:layout_marginStart="8dp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnActualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actualizar"
+        android:textAllCaps="false"
+        android:layout_marginBottom="8dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnEliminarDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:textAllCaps="false"
+        style="?attr/materialButtonOutlinedStyle"
+        android:textColor="#F44336"/>
+
+</LinearLayout>
