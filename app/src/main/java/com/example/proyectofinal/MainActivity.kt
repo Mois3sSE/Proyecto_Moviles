@@ -20,8 +20,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnIrConfiguracion.setOnClickListener {
-            // val intent = Intent(this, ConfiguracionActivity::class.java)
-            // startActivity(intent)
+            val intent = Intent(this, ConfiguracionActivity::class.java)
+            startActivity(intent)
         }
     }
 }
